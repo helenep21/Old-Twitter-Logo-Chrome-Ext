@@ -11,3 +11,5 @@ Then, in Chrome, go to Extension Management > Enable Developer Mode (if not alre
 Chrome will load the extension, and you should see its icon appear in the Chrome toolbar !
 
 Visit Twitter's web version (https://twitter.com/) in a new tab, and the Twitter logo should now be replaced with your custom image :)
+
+Side Note : should work on all chromium-based browsers (ex: Brave)
