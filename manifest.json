@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Old Twitter Logo",
+    "version": "1.0",
+    "icons": {"48" : "icon.png"},
+    "description": "Replace X logo with the old blue Twitter bird.",
+    "author": "https://github.com/helenep21",
+    "permissions": ["scripting"],
+    "host_permissions": [
+      "*://twitter.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://twitter.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
