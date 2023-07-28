@@ -30,9 +30,19 @@ function replaceTwitterLogo() {
       faviconLink.href = url;
     }
   }
+
+  function replacePageTitle() {
+    const pageTitleElement = document.querySelector('title');
+    if(pageTitleElement){
+      const pageTitle = pageTitleElement.textContent;
+      const newPageTitle = pageTitle.replace('X', 'Twitter');
+      pageTitleElement.textContent = newPageTitle;
+    }
+  }
   
   if (navigator.userAgentData) {
     replaceTabImage();
+    setTimeout(replacePageTitle, 500);
     setTimeout(replaceTwitterLogo, 500);
   } else {
     document.addEventListener('DOMContentLoaded', replaceTwitterLogo);
